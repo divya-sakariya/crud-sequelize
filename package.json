@@ -1,0 +1,26 @@
+{
+  "name": "crud-sequelize",
+  "version": "1.0.0",
+  "description": "CRUD operation with sequelize and pagadmin",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Divya Sakariya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-session-sequelize": "^7.1.1",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^3.6.8",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  }
+}

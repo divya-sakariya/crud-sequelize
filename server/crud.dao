@@ -1,0 +1,29 @@
+const create = (model, data) => {
+    return model.create(data);
+}
+
+const update = (model, data, id) => {
+    return model.update(data, { where: { id: id } });
+}
+
+const deleteById = (model, id) =>{
+    return model.destroy({ where: { id: id } });
+}
+
+const findById = (model, id) => {
+    return model.findOne({ where: { id: id } });
+}
+
+const findAll = (model) =>{
+    return model.findAll();
+}
+
+const crudDao = {
+    create: create,
+    update: update,
+    deleteById: deleteById,
+    findById: findById,
+    findAll: findAll
+}
+
+module.exports = crudDao;
